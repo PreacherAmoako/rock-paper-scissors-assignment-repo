@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="main.css">
+
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
 
-  Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <section class="score-area">
+    <img src="./images/logo.svg" alt="rock-paper-scissors logo" class="logo">
+    <div class="score-box">
+      <span class="score-title">SCORE</span>
+      <span class="score-value">12</span>
+    </div>
+  </section>
 
+  <main id="main-screen">
+    <!-- screen 1 -->
+    <section id="screen-1" class="screen">
+      <img class="paper-position" src="./images/paper-colored.svg" alt="Paper icon" onclick="onPaperClicked()">
+      <img class="scissor-position" src="./images/scissors-colored.svg" alt="Scissor icon">
+      <img class="rock-position" src="./images/rock-colored.svg" alt="Rock icon">
+      <img class="triangle-position" src="./images/bg-triangle.svg" alt="arangement triangle">
+    </section>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <!-- screen 2 -->
+    <section id="screen-2" class="screen" onclick="dummy()">
+      HELLO SCREEN 2
+    </section>
+  </main>
+
+  <section class="rules-area">
+    <button class="show-rules-btn">RULES</button>
+  </section>
+
+  <script src="./main.js"></script>
 </body>
+
 </html>

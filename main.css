@@ -1,0 +1,115 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: radial-gradient(134.34% 134.34% at 50% 0%, #1F3757 0%, #131537 100%);
+    height: 100vh;
+    width: 100vw;
+}
+
+.score-area {
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.2895);
+    border-radius: 5px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.logo {
+    width: 5rem;
+}
+
+.score-box {
+    background: linear-gradient(0deg, #F3F3F3, white);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.score-title {
+    font-size: 0.8rem;
+    color: #2A45C2;
+}
+
+.score-value {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #565468;
+}
+
+#main-screen {
+    width: 80%;
+}
+
+#screen-1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paper-position{
+    position: absolute;
+    z-index: 2;
+    top: -50px;
+    left: -5px;
+}
+
+.rock-position{
+    position: absolute;
+    z-index: 2;
+    bottom: -50px;
+}
+
+.scissor-position{
+    position: absolute;
+    z-index: 2;
+    top: -50px;
+    right: -5px;
+}
+
+.triangle-position{
+    position: relative;
+    z-index: 1;
+    width: 200px;
+}
+
+.rules-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.show-rules-btn {
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.show-rules-btn:hover {
+    color: #3B4262;
+    background-color: white;
+}
+
+#screen-2 {
+    display: none;
+}
