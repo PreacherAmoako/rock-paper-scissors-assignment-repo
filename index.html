@@ -25,20 +25,37 @@
   <main id="main-screen">
     <!-- screen 1 -->
     <section id="screen-1" class="screen">
-      <img class="paper-position" src="./images/paper-colored.svg" alt="Paper icon" onclick="onPaperClicked()">
-      <img class="scissor-position" src="./images/scissors-colored.svg" alt="Scissor icon">
-      <img class="rock-position" src="./images/rock-colored.svg" alt="Rock icon">
+      <img class="paper-obj paper-position" src="./images/paper-colored.svg" alt="Paper icon" onclick="onPaperClicked()">
+      <img class="scissors-obj scissor-position" src="./images/scissors-colored.svg" alt="Scissor icon" onclick="onScissorsClicked()">
+      <img class="rock-obj rock-position" src="./images/rock-colored.svg" alt="Rock icon" onclick="onRockClicked()">
       <img class="triangle-position" src="./images/bg-triangle.svg" alt="arangement triangle">
     </section>
 
     <!-- screen 2 -->
     <section id="screen-2" class="screen" onclick="dummy()">
-      HELLO SCREEN 2
+      <img class="user-selection rock-obj" src="./images/rock-colored.svg" alt="Rock icon">
+      <img class="computer-selection scissors-obj" src="./images/scissors-colored.svg" alt="Scissor icon">
+      
+      <section class="info-box">
+        <h3 class="you-win">
+          YOU WIN<br>
+        </h3>
+        <button class="btn-play-again">
+          PLAY AGAIN
+        </button>
+      </section>
     </section>
   </main>
 
   <section class="rules-area">
-    <button class="show-rules-btn">RULES</button>
+    <button class="show-rules-btn" onclick="showRules()">RULES</button>
+  </section>
+  
+  <!-- rules modal -->
+  <section id="rules-modal" class="screen">
+    <h1>RULES</h1>
+    <img src="./images/image-rules.svg" alt="rules" class="rules-img">
+    <img src="./images/icon-close.svg" alt="close rules" class="close-rules-img" onclick="hideRules()">
   </section>
 
   <script src="./main.js"></script>

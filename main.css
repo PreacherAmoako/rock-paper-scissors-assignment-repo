@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;700&display=swap');
+
 html,
 body {
     margin: 0px;
@@ -5,6 +7,7 @@ body {
 }
 
 body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,31 +62,32 @@ body {
 #screen-1 {
     position: relative;
     display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
 
-.paper-position{
+#screen-1 .paper-position {
     position: absolute;
     z-index: 2;
     top: -50px;
     left: -5px;
 }
 
-.rock-position{
+#screen-1 .rock-position {
     position: absolute;
     z-index: 2;
     bottom: -50px;
 }
 
-.scissor-position{
+#screen-1 .scissor-position {
     position: absolute;
     z-index: 2;
     top: -50px;
     right: -5px;
 }
 
-.triangle-position{
+#screen-1 .triangle-position {
     position: relative;
     z-index: 1;
     width: 200px;
@@ -111,5 +115,75 @@ body {
 }
 
 #screen-2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+#screen-2 .user-selection {
+    position: absolute;
+    z-index: 2;
+    top: -50px;
+    left: -5px;
+}
+
+#screen-2 .computer-selection {
+    position: absolute;
+    z-index: 2;
+    top: -50px;
+    right: -5px;
+}
+
+.btn-play-again {
+    background: linear-gradient(0deg, #F3F3F3 0%, #FFFFFF 100%);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    border-radius: 8px;
+    height: 48px;
+    width: 220px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.info-box {
+    margin-top: 14rem;
+}
+
+.you-win {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    /* line-height: 67px; */
+    margin-bottom: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+}
+
+#rules-modal {
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: #FFFFFF;
     display: none;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#rules-modal h1 {
+    font-size: 2rem;
+    color: #3B4262;
+}
+
+#rules-modal .rules-img {
+    width: 80%;
+}
+
+#rules-modal .close-rules-img {
+    width: 1.5rem;
 }
