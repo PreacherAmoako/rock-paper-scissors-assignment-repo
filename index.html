@@ -18,7 +18,7 @@
     <img src="./images/logo.svg" alt="rock-paper-scissors logo" class="logo">
     <div class="score-box">
       <span class="score-title">SCORE</span>
-      <span class="score-value">12</span>
+      <span class="score-value">0</span>
     </div>
   </section>
 
@@ -32,15 +32,45 @@
     </section>
 
     <!-- screen 2 -->
-    <section id="screen-2" class="screen" onclick="dummy()">
-      <img class="user-selection rock-obj" src="./images/rock-colored.svg" alt="Rock icon">
-      <img class="computer-selection scissors-obj" src="./images/scissors-colored.svg" alt="Scissor icon">
+    <section id="screen-2" class="screen">
+      <!-- user objects -->
+      <div class="rock-obj user">
+        <img src="./images/rock-colored.svg" alt="Rock icon">
+      </div>
+      <div class="scissors-obj user">
+        <img src="./images/scissors-colored.svg" alt="Scissor icon">
+      </div>
+      <div class="paper-obj user">
+        <img src="./images/paper-colored.svg" alt="paper icon">
+      </div>
+      
+
+      <!-- copmuter objects -->
+      <div class="rock-obj computer">
+        <img src="./images/rock-colored.svg" alt="Rock icon">
+      </div>
+      <div class="scissors-obj computer">
+        <img src="./images/scissors-colored.svg" alt="Scissor icon">
+      </div>
+      <div class="paper-obj computer">
+        <img src="./images/paper-colored.svg" alt="paper icon">
+      </div>
+
+      <div class="selection-rainbow">
+        <img src="./images/selection-rainbow.svg" alt="Selection rainbow">
+      </div>
+
+
+      <!-- <p class="user-status">YOU PICKED</p> -->
+      <!-- <p class="house-status">THE HOUSE PICKED</p> -->
+      <img class="empty-selection" src="./images/empty-selection.svg" alt="Preselection">
       
       <section class="info-box">
-        <h3 class="you-win">
-          YOU WIN<br>
-        </h3>
-        <button class="btn-play-again">
+        <h3 class="you-win">YOU WIN</h3>
+        <h3 class="you-lose">YOU LOSE</h3>
+        <h3 class="you-tie">YOU TIE</h3>
+        <br>
+        <button class="btn-play-again" onclick="onPlayAgain()">
           PLAY AGAIN
         </button>
       </section>
