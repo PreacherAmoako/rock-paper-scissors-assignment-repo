@@ -164,7 +164,7 @@ function computeRound(userSelection, computerSelection) {
   } else if (userSelection === PAPER && computerSelection === PAPER) {
     roundResults = TIE
   } else if (userSelection === PAPER && computerSelection === ROCK) {
-    roundResults = COMPUTER_WINS
+    roundResults = USER_WINS
   } else if (userSelection === PAPER && computerSelection === SCISSORS) {
     roundResults = COMPUTER_WINS
   } else if (userSelection === SCISSORS && computerSelection === PAPER) {

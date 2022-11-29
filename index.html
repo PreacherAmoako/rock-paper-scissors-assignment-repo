@@ -15,7 +15,10 @@
 
 <body>
   <section class="score-area">
-    <img src="./images/logo.svg" alt="rock-paper-scissors logo" class="logo">
+    <picture>
+      <source media="(min-width:1366px)" srcset="./images/logo-2x.svg">
+      <img src="./images/logo.svg" alt="rock-paper-scissors logo" class="logo">
+    </picture>
     <div class="score-box">
       <span class="score-title">SCORE</span>
       <span class="score-value">0</span>
@@ -25,45 +28,71 @@
   <main id="main-screen">
     <!-- screen 1 -->
     <section id="screen-1" class="screen">
-      <img class="paper-obj paper-position" src="./images/paper-colored.svg" alt="Paper icon" onclick="onPaperClicked()">
-      <img class="scissors-obj scissor-position" src="./images/scissors-colored.svg" alt="Scissor icon" onclick="onScissorsClicked()">
-      <img class="rock-obj rock-position" src="./images/rock-colored.svg" alt="Rock icon" onclick="onRockClicked()">
-      <img class="triangle-position" src="./images/bg-triangle.svg" alt="arangement triangle">
+      <img class="game-obj paper-obj paper-position" src="./images/paper-colored.svg" alt="Paper icon" onclick="onPaperClicked()">
+      <img class="game-obj scissors-obj scissor-position" src="./images/scissors-colored.svg" alt="Scissor icon" onclick="onScissorsClicked()">
+      <img class="game-obj rock-obj rock-position" src="./images/rock-colored.svg" alt="Rock icon" onclick="onRockClicked()">
+      <picture>
+        <source media="(min-width:1366px)" srcset="./images/bg-triangle-2x.svg">
+        <img class="triangle-position" src="./images/bg-triangle.svg" alt="arangement triangle">
+      </picture>
     </section>
 
     <!-- screen 2 -->
     <section id="screen-2" class="screen">
       <!-- user objects -->
       <div class="rock-obj user">
-        <img src="./images/rock-colored.svg" alt="Rock icon">
+        <picture>
+          <source media="(min-width:1366px)" srcset="./images/rock-colored-2x.svg">
+          <img src="./images/rock-colored.svg" alt="Rock icon">
+        </picture>
       </div>
       <div class="scissors-obj user">
-        <img src="./images/scissors-colored.svg" alt="Scissor icon">
+        <picture>
+          <source media="(min-width:1366px)" srcset="./images/scissors-colored-2x.svg">
+          <img src="./images/scissors-colored.svg" alt="Scissor icon">
+        </picture>
       </div>
       <div class="paper-obj user">
-        <img src="./images/paper-colored.svg" alt="paper icon">
+        <picture>
+          <source media="(min-width:1366px)" srcset="./images/paper-colored-2x.svg">
+          <img src="./images/paper-colored.svg" alt="paper icon">
+        </picture>
       </div>
-      
 
       <!-- copmuter objects -->
       <div class="rock-obj computer">
-        <img src="./images/rock-colored.svg" alt="Rock icon">
+        <picture>
+          <source media="(min-width:1366px)" srcset="./images/rock-colored-2x.svg">
+          <img src="./images/rock-colored.svg" alt="Rock icon">
+        </picture>
       </div>
       <div class="scissors-obj computer">
-        <img src="./images/scissors-colored.svg" alt="Scissor icon">
+        <picture>
+          <source media="(min-width:1366px)" srcset="./images/scissors-colored-2x.svg">
+          <img src="./images/scissors-colored.svg" alt="Scissor icon">
+        </picture>
       </div>
       <div class="paper-obj computer">
-        <img src="./images/paper-colored.svg" alt="paper icon">
+        <picture>
+          <source media="(min-width:1366px)" srcset="./images/paper-colored-2x.svg">
+          <img src="./images/paper-colored.svg" alt="paper icon">
+        </picture>
       </div>
 
       <div class="selection-rainbow">
-        <img src="./images/selection-rainbow.svg" alt="Selection rainbow">
+        <picture>
+          <source media="(min-width:1366px)" srcset="./images/selection-rainbow-2x.svg">
+          <img src="./images/selection-rainbow.svg" alt="Selection rainbow">
+        </picture>
       </div>
 
 
-      <!-- <p class="user-status">YOU PICKED</p> -->
-      <!-- <p class="house-status">THE HOUSE PICKED</p> -->
-      <img class="empty-selection" src="./images/empty-selection.svg" alt="Preselection">
+      <p class="user-status">YOU PICKED</p>
+      <p class="house-status">THE HOUSE PICKED</p>
+      <picture>
+        <source media="(min-width:1366px)" srcset="./images/empty-selection-2x.svg">
+        <img class="empty-selection" src="./images/empty-selection.svg" alt="Preselection">
+      </picture>
       
       <section class="info-box">
         <h3 class="you-win">YOU WIN</h3>
@@ -83,9 +112,11 @@
   
   <!-- rules modal -->
   <section id="rules-modal" class="screen">
-    <h1>RULES</h1>
-    <img src="./images/image-rules.svg" alt="rules" class="rules-img">
-    <img src="./images/icon-close.svg" alt="close rules" class="close-rules-img" onclick="hideRules()">
+    <div id="rules-modal-content">
+      <h1>RULES</h1>
+      <img src="./images/image-rules.svg" alt="rules" class="rules-img">
+      <img src="./images/icon-close.svg" alt="close rules" class="close-rules-img" onclick="hideRules()">
+    </div>
   </section>
 
   <script src="./main.js"></script>
